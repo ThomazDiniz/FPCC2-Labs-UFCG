@@ -1,0 +1,868 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Regressão linear na prática},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Regressão linear na prática}
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+\maketitle
+
+\begin{verbatim}
+## -- Attaching core tidyverse packages ------------------------ tidyverse 2.0.0 --
+## v dplyr     1.1.4     v readr     2.1.5
+## v forcats   1.0.0     v stringr   1.5.1
+## v ggplot2   3.5.0     v tibble    3.2.1
+## v lubridate 1.9.3     v tidyr     1.3.1
+## v purrr     1.0.2     
+## -- Conflicts ------------------------------------------ tidyverse_conflicts() --
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+## 
+## Attaching package: 'modelr'
+## 
+## 
+## The following object is masked from 'package:broom':
+## 
+##     bootstrap
+\end{verbatim}
+
+\hypertarget{dados-da-capes-sobre-avaliauxe7uxe3o-da-puxf3s-graduauxe7uxe3o}{%
+\subsection{Dados da CAPES sobre avaliação da
+pós-graduação}\label{dados-da-capes-sobre-avaliauxe7uxe3o-da-puxf3s-graduauxe7uxe3o}}
+
+A CAPES é um órgão do MEC que tem a atribuição de acompanhar a
+pós-graduação na universidade brasileira. Uma das formas que ela
+encontrou de fazer isso e pela qual ela é bastante criticada é através
+de uma avaliação quantitativa a cada x anos (era 3, mudou para 4).
+
+Usaremos dados da penúltima avaliação da CAPES:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cacc\_tudo }\OtherTok{=} \FunctionTok{read\_projectdata}\NormalTok{()}
+
+\FunctionTok{glimpse}\NormalTok{(cacc\_tudo)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 73
+## Columns: 31
+## $ Instituição                  <chr> "UNIVERSIDADE FEDERAL DO AMAZONAS", "UNIV~
+## $ Programa                     <chr> "INFORMÁTICA (12001015012P2)", "CIÊNCIA D~
+## $ Nível                        <int> 5, 4, 3, 3, 3, 5, 4, 3, 3, 3, 5, 3, 3, 3,~
+## $ Sigla                        <chr> "UFAM", "UFPA", "UFMA", "UEMA", "FUFPI", ~
+## $ `Tem doutorado`              <chr> "Sim", "Sim", "Não", "Não", "Não", "Sim",~
+## $ `Docentes colaboradores`     <dbl> 0.25, 5.50, 3.00, 6.25, 1.75, 2.00, 1.00,~
+## $ `Docentes permanentes`       <dbl> 24.75, 14.00, 10.00, 14.00, 9.50, 20.75, ~
+## $ `Docentes visitantes`        <dbl> 0.00, 0.00, 0.00, 0.00, 0.00, 0.75, 0.50,~
+## $ `Resumos em conf`            <int> 20, 23, 15, 5, 4, 10, 6, 136, 0, 24, 27, ~
+## $ `Resumos expandidos em conf` <int> 25, 24, 7, 10, 1, 68, 9, 13, 4, 6, 16, 5,~
+## $ `Artigos em conf`            <int> 390, 284, 115, 73, 150, 269, 179, 0, 120,~
+## $ Dissertacoes                 <int> 108, 77, 50, 25, 31, 75, 60, 129, 45, 3, ~
+## $ Teses                        <int> 14, 0, 0, 0, 0, 24, 5, 0, 0, 0, 29, 0, 0,~
+## $ periodicos_A1                <int> 15, 19, 5, 1, 7, 21, 21, 0, 3, 8, 44, 0, ~
+## $ periodicos_A2                <int> 19, 21, 11, 1, 4, 32, 13, 0, 9, 2, 23, 2,~
+## $ periodicos_B1                <int> 19, 38, 7, 3, 6, 26, 16, 2, 6, 4, 32, 4, ~
+## $ periodicos_B2                <int> 1, 12, 2, 6, 0, 0, 11, 0, 0, 2, 1, 0, 0, ~
+## $ periodicos_B3                <int> 3, 16, 2, 2, 3, 16, 15, 0, 4, 6, 9, 0, 2,~
+## $ periodicos_B4                <int> 0, 4, 0, 3, 3, 0, 1, 3, 1, 6, 0, 0, 4, 5,~
+## $ periodicos_B5                <int> 10, 16, 8, 4, 12, 4, 16, 2, 6, 2, 11, 0, ~
+## $ periodicos_C                 <int> 9, 34, 12, 5, 2, 3, 11, 9, 5, 10, 16, 1, ~
+## $ periodicos_NA                <int> 7, 15, 8, 11, 12, 6, 19, 31, 7, 14, 19, 0~
+## $ per_comaluno_A1              <int> 4, 1, 0, 0, 1, 7, 5, 0, 1, 0, 10, 0, 0, 2~
+## $ per_comaluno_A2              <int> 5, 5, 5, 0, 2, 15, 3, 0, 3, 0, 3, 0, 0, 1~
+## $ per_comaluno_B1              <int> 4, 2, 5, 2, 2, 14, 6, 0, 2, 0, 17, 0, 1, ~
+## $ per_comaluno_B2              <int> 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0,~
+## $ per_comaluno_B3              <int> 2, 2, 0, 1, 0, 7, 9, 0, 2, 0, 4, 0, 0, 1,~
+## $ per_comaluno_B4              <int> 0, 0, 0, 0, 2, 0, 1, 0, 1, 3, 0, 0, 2, 0,~
+## $ per_comaluno_B5              <int> 5, 0, 4, 0, 8, 3, 6, 0, 4, 0, 4, 0, 2, 5,~
+## $ per_comaluno_C               <int> 6, 5, 3, 1, 2, 3, 7, 1, 2, 4, 8, 0, 11, 3~
+## $ per_comaluno_NA              <int> 6, 14, 2, 2, 9, 3, 6, 4, 5, 1, 10, 0, 17,~
+\end{verbatim}
+
+\hypertarget{produuxe7uxe3o-e-produtividade-de-artigos}{%
+\subsubsection{Produção e produtividade de
+artigos}\label{produuxe7uxe3o-e-produtividade-de-artigos}}
+
+Uma das maneiras de avaliar a produção dos docentes que a CAPES utiliza
+é quantificando a produção de artigos pelos docentes. Os artigos são
+categorizados em extratos ordenados (A1 é o mais alto), e separados
+entre artigos em conferências e periódicos. Usaremos para esse lab a
+produção em periódicos avaliados com A1, A2 e B1.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cacc }\OtherTok{=}\NormalTok{ cacc\_tudo }\SpecialCharTok{\%\textgreater{}\%}
+  \FunctionTok{transmute}\NormalTok{(}
+    \AttributeTok{docentes =} \StringTok{\textasciigrave{}}\AttributeTok{Docentes permanentes}\StringTok{\textasciigrave{}}\NormalTok{,}
+    \AttributeTok{producao =}\NormalTok{ (periodicos\_A1 }\SpecialCharTok{+}\NormalTok{ periodicos\_A2 }\SpecialCharTok{+}\NormalTok{ periodicos\_B1),}
+    \AttributeTok{produtividade =}\NormalTok{ producao }\SpecialCharTok{/}\NormalTok{ docentes,}
+    \AttributeTok{mestrados =}\NormalTok{ Dissertacoes,}
+    \AttributeTok{doutorados =}\NormalTok{ Teses,}
+    \AttributeTok{tem\_doutorado =} \FunctionTok{tolower}\NormalTok{(}\StringTok{\textasciigrave{}}\AttributeTok{Tem doutorado}\StringTok{\textasciigrave{}}\NormalTok{) }\SpecialCharTok{==} \StringTok{"sim"}\NormalTok{,}
+    \AttributeTok{mestrados\_pprof =}\NormalTok{ mestrados }\SpecialCharTok{/}\NormalTok{ docentes,}
+    \AttributeTok{doutorados\_pprof =}\NormalTok{ doutorados }\SpecialCharTok{/}\NormalTok{ docentes,}
+\NormalTok{    Nível }\OtherTok{=}\NormalTok{ Nível,}
+    
+\NormalTok{  )}
+
+\NormalTok{cacc\_md }\OtherTok{=}\NormalTok{ cacc }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{filter}\NormalTok{(tem\_doutorado)}
+\end{Highlighting}
+\end{Shaded}
+
+\hypertarget{eda}{%
+\subsubsection{EDA}\label{eda}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{skimr}\SpecialCharTok{::}\FunctionTok{skim}\NormalTok{(cacc)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{longtable}[]{@{}ll@{}}
+\caption{Data summary}\tabularnewline
+\toprule\noalign{}
+\endfirsthead
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Name & cacc \\
+Number of rows & 73 \\
+Number of columns & 9 \\
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \\
+Column type frequency: & \\
+logical & 1 \\
+numeric & 8 \\
+\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ & \\
+Group variables & None \\
+\end{longtable}
+
+\textbf{Variable type: logical}
+
+\begin{longtable}[]{@{}lrrrl@{}}
+\toprule\noalign{}
+skim\_variable & n\_missing & complete\_rate & mean & count \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+tem\_doutorado & 0 & 1 & 0.47 & FAL: 39, TRU: 34 \\
+\end{longtable}
+
+\textbf{Variable type: numeric}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1889}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1111}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.1556}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0667}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0667}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0556}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0667}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0667}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0778}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0778}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 20\tabcolsep) * \real{0.0667}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+skim\_variable
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+n\_missing
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+complete\_rate
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+mean
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+sd
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+p0
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+p25
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+p50
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+p75
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+p100
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+hist
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+docentes & 0 & 1 & 20.63 & 12.27 & 8.25 & 11.25 & 16.75 & 25.75 & 67.25
+& ▇▃▁▁▁ \\
+producao & 0 & 1 & 58.03 & 65.44 & 0.00 & 18.00 & 42.00 & 67.00 & 355.00
+& ▇▂▁▁▁ \\
+produtividade & 0 & 1 & 2.36 & 1.37 & 0.00 & 1.40 & 2.27 & 3.20 & 5.66 &
+▆▇▇▅▂ \\
+mestrados & 0 & 1 & 75.79 & 63.23 & 0.00 & 39.00 & 58.00 & 103.00 &
+433.00 & ▇▃▁▁▁ \\
+doutorados & 0 & 1 & 14.96 & 30.98 & 0.00 & 0.00 & 0.00 & 14.00 & 152.00
+& ▇▁▁▁▁ \\
+mestrados\_pprof & 0 & 1 & 3.66 & 1.81 & 0.00 & 2.57 & 3.58 & 4.88 &
+8.19 & ▂▇▇▃▂ \\
+doutorados\_pprof & 0 & 1 & 0.43 & 0.73 & 0.00 & 0.00 & 0.00 & 0.57 &
+2.69 & ▇▁▁▁▁ \\
+Nível & 0 & 1 & 3.84 & 1.17 & 3.00 & 3.00 & 3.00 & 4.00 & 7.00 &
+▇▅▁▁▁ \\
+\end{longtable}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cacc }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ docentes)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{bins =} \DecValTok{15}\NormalTok{, }\AttributeTok{fill =}\NormalTok{ paleta[}\DecValTok{1}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{producao-e-produtividade_files/figure-latex/unnamed-chunk-5-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cacc }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ producao)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{bins =} \DecValTok{15}\NormalTok{, }\AttributeTok{fill =}\NormalTok{ paleta[}\DecValTok{2}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{producao-e-produtividade_files/figure-latex/unnamed-chunk-5-2.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cacc }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ produtividade)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_histogram}\NormalTok{(}\AttributeTok{bins =} \DecValTok{15}\NormalTok{, }\AttributeTok{fill =}\NormalTok{ paleta[}\DecValTok{3}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{producao-e-produtividade_files/figure-latex/unnamed-chunk-5-3.pdf}
+
+Se quisermos modelar o efeito do tamanho do programa em termos de
+docentes (permanentes) na quantidade de artigos publicados, podemos usar
+regressão.
+
+\emph{Importante}: sempre queremos ver os dados antes de fazermos
+qualquer modelo ou sumário:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cacc }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ docentes, }\AttributeTok{y =}\NormalTok{ producao)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_point}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{producao-e-produtividade_files/figure-latex/unnamed-chunk-6-1.pdf}
+
+Parece que existe uma relação. Vamos criar um modelo então:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{modelo1 }\OtherTok{=} \FunctionTok{lm}\NormalTok{(producao }\SpecialCharTok{\textasciitilde{}}\NormalTok{ docentes, }\AttributeTok{data =}\NormalTok{ cacc)}
+
+\FunctionTok{tidy}\NormalTok{(modelo1, }\AttributeTok{conf.int =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{conf.level =} \FloatTok{0.95}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 2 x 7
+##   term        estimate std.error statistic  p.value conf.low conf.high
+##   <chr>          <dbl>     <dbl>     <dbl>    <dbl>    <dbl>     <dbl>
+## 1 (Intercept)   -41.3      6.53      -6.32 2.01e- 8   -54.3     -28.3 
+## 2 docentes        4.81     0.273     17.7  1.09e-27     4.27      5.36
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{glance}\NormalTok{(modelo1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 12
+##   r.squared adj.r.squared sigma statistic  p.value    df logLik   AIC   BIC
+##       <dbl>         <dbl> <dbl>     <dbl>    <dbl> <dbl>  <dbl> <dbl> <dbl>
+## 1     0.815         0.812  28.4      312. 1.09e-27     1  -347.  700.  706.
+## # i 3 more variables: deviance <dbl>, df.residual <int>, nobs <int>
+\end{verbatim}
+
+Para visualizar o modelo:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{cacc\_augmented }\OtherTok{=}\NormalTok{ cacc }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{add\_predictions}\NormalTok{(modelo1) }
+
+\NormalTok{cacc\_augmented }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ docentes)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ pred), }\AttributeTok{colour =} \StringTok{"brown"}\NormalTok{) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_point}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ producao)) }\SpecialCharTok{+} 
+  \FunctionTok{labs}\NormalTok{(}\AttributeTok{y =} \StringTok{"Produção do programa"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{producao-e-produtividade_files/figure-latex/unnamed-chunk-8-1.pdf}
+
+Se considerarmos que temos apenas uma amostra de todos os programas de
+pós em CC no Brasil, o que podemos inferir a partir desse modelo sobre a
+relação entre número de docentes permanentes e produção de artigos em
+programas de pós?
+
+Normalmente reportaríamos o resultado da seguinte maneira, substituindo
+VarIndepX e todos os x's e y's pelos nomes e valores de fato:
+
+\begin{quote}
+Regressão múltipla foi utilizada para analisar se VarIndep1 e VarIndep2
+tem uma associação significativa com VarDep. Os resultados da regressão
+indicam que um modelo com os 2 preditores no formato VarDep =
+XXX.VarIndep1 + YYY.VarIndep2 explicam XX,XX\% da variância da variável
+de resposta (R2 = XX,XX). VarIndep1, medida como/em {[}unidade ou o que
+é o 0 e o que é 1{]} tem uma relação significativa com o erro (b =
+{[}yy,yy; zz,zz{]}, IC com 95\%), assim como VarIndep2 medida como
+{[}unidade ou o que é o 0 e o que é 1{]} (b = {[}yy,yy; zz,zz{]}, IC com
+95\%). O aumento de 1 unidade de VarIndep1 produz uma mudança de xxx em
+VarDep, enquanto um aumento\ldots{}
+\end{quote}
+
+Produza aqui a sua versão desse texto, portanto:
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+Regressão Simples foi utilizada para analisar se docentes (representada
+pela quantidade de docentes) tem uma associação significativa com a
+produção(representada pela quantidade de artigos acadêmicos produzidos).
+Os resultados da regressão indicam que um modelo com um preditor no
+formato de produção = -41,27 + 4,81*docentes explicam 81,46\% da
+variância da variável de resposta (R2 =). Docentes, medida em unidade
+tem uma relação significativa com o erro (b = {[}4,27,5,36{]}, IC com
+95\%), IC com 95\%). O aumento de 1 unidade de docentes produz uma
+mudança de x4,81 em produção, enquanto um aumento\ldots{}
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+Dito isso, o que significa a relação que você encontrou na prática para
+entendermos os programas de pós graduação no Brasil? E algum palpite de
+por que a relação que encontramos é forte?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{quote}
+A relação encontrada é forte, o que significa que quanto amior a
+quantidade de docentes do programa, é esperado que maior seja a
+quantidade de artigos publicados. Existe uma relação clara entre a
+quantidade de docentes e a quantidade de alunos do programa de pós
+graduação. Além disso é esperado que alunos que não desistiram de fazer
+mestrado ou doutorado publiquem. Desta forma quanto maior a quantidade
+de docentes, maior a quantidade de mestrandos e doutorandos; e quanto
+maior a quantidade de mestrandos e doutorandos, maior a quantidade de
+artigos.
+\end{quote}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{mais-fatores}{%
+\subsection{Mais fatores}\label{mais-fatores}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{modelo2 }\OtherTok{=} \FunctionTok{lm}\NormalTok{(producao }\SpecialCharTok{\textasciitilde{}}\NormalTok{ docentes }\SpecialCharTok{+}\NormalTok{ mestrados\_pprof }\SpecialCharTok{+}\NormalTok{ doutorados\_pprof }\SpecialCharTok{+}\NormalTok{ tem\_doutorado, }
+             \AttributeTok{data =}\NormalTok{ cacc\_md)}
+
+\FunctionTok{tidy}\NormalTok{(modelo2, }\AttributeTok{conf.int =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{conf.level =} \FloatTok{0.95}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 5 x 7
+##   term              estimate std.error statistic  p.value conf.low conf.high
+##   <chr>                <dbl>     <dbl>     <dbl>    <dbl>    <dbl>     <dbl>
+## 1 (Intercept)       -39.5       17.7    -2.23     3.35e-2   -75.7      -3.29
+## 2 docentes            4.39       0.539   8.14     4.38e-9     3.29      5.49
+## 3 mestrados_pprof     0.0318     3.49    0.00913  9.93e-1    -7.09      7.15
+## 4 doutorados_pprof   16.1        8.80    1.83     7.72e-2    -1.87     34.1 
+## 5 tem_doutoradoTRUE  NA         NA      NA       NA          NA        NA
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{glance}\NormalTok{(modelo2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 12
+##   r.squared adj.r.squared sigma statistic  p.value    df logLik   AIC   BIC
+##       <dbl>         <dbl> <dbl>     <dbl>    <dbl> <dbl>  <dbl> <dbl> <dbl>
+## 1     0.816         0.798  34.1      44.4 3.75e-11     3  -166.  342.  350.
+## # i 3 more variables: deviance <dbl>, df.residual <int>, nobs <int>
+\end{verbatim}
+
+E se considerarmos também o número de alunos?
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{modelo2 }\OtherTok{=} \FunctionTok{lm}\NormalTok{(producao }\SpecialCharTok{\textasciitilde{}}\NormalTok{ docentes }\SpecialCharTok{+}\NormalTok{ mestrados }\SpecialCharTok{+}\NormalTok{ doutorados, }\AttributeTok{data =}\NormalTok{ cacc)}
+
+\FunctionTok{tidy}\NormalTok{(modelo2, }\AttributeTok{conf.int =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{conf.level =} \FloatTok{0.95}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 4 x 7
+##   term        estimate std.error statistic  p.value conf.low conf.high
+##   <chr>          <dbl>     <dbl>     <dbl>    <dbl>    <dbl>     <dbl>
+## 1 (Intercept)  -14.4      7.45       -1.93 5.81e- 2  -29.2      0.504 
+## 2 docentes       3.50     0.460       7.61 1.02e-10    2.58     4.42  
+## 3 mestrados     -0.195    0.0816     -2.39 1.96e- 2   -0.358   -0.0322
+## 4 doutorados     1.00     0.183       5.47 6.87e- 7    0.636    1.37
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{glance}\NormalTok{(modelo2)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 12
+##   r.squared adj.r.squared sigma statistic  p.value    df logLik   AIC   BIC
+##       <dbl>         <dbl> <dbl>     <dbl>    <dbl> <dbl>  <dbl> <dbl> <dbl>
+## 1     0.871         0.865  24.0      155. 1.42e-30     3  -334.  677.  689.
+## # i 3 more variables: deviance <dbl>, df.residual <int>, nobs <int>
+\end{verbatim}
+
+Visualizar o modelo com muitas variáveis independentes fica mais difícil
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{para\_plotar\_modelo }\OtherTok{=}\NormalTok{ cacc }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{data\_grid}\NormalTok{(}\AttributeTok{producao =} \FunctionTok{seq\_range}\NormalTok{(producao, }\DecValTok{10}\NormalTok{), }\CommentTok{\# Crie um vetor de 10 valores no range}
+            \AttributeTok{docentes =} \FunctionTok{seq\_range}\NormalTok{(docentes, }\DecValTok{4}\NormalTok{),  }
+            \CommentTok{\# mestrados = seq\_range(mestrados, 3),}
+            \AttributeTok{mestrados =} \FunctionTok{median}\NormalTok{(mestrados),}
+            \AttributeTok{doutorados =} \FunctionTok{seq\_range}\NormalTok{(doutorados, }\DecValTok{3}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{add\_predictions}\NormalTok{(modelo2)}
+
+\FunctionTok{glimpse}\NormalTok{(para\_plotar\_modelo)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 120
+## Columns: 5
+## $ producao   <dbl> 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.000~
+## $ docentes   <dbl> 8.25000, 8.25000, 8.25000, 27.91667, 27.91667, 27.91667, 47~
+## $ mestrados  <int> 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58,~
+## $ doutorados <dbl> 0, 76, 152, 0, 76, 152, 0, 76, 152, 0, 76, 152, 0, 76, 152,~
+## $ pred       <dbl> 3.199123, 79.257725, 155.316327, 72.026777, 148.085378, 224~
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{para\_plotar\_modelo }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ docentes, }\AttributeTok{y =}\NormalTok{ pred)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{group =}\NormalTok{ doutorados, }\AttributeTok{colour =}\NormalTok{ doutorados)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{data =}\NormalTok{ cacc, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ producao, }\AttributeTok{colour =}\NormalTok{ doutorados))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{producao-e-produtividade_files/figure-latex/unnamed-chunk-12-1.pdf}
+
+Considerando agora esses três fatores, o que podemos dizer sobre como
+cada um deles se relaciona com a produção de um programa de pós em CC? E
+sobre o modelo? Ele explica mais que o modelo 1?
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{modelo-produuxe7uxe3o-docentes-mestrandos_por_professor-doutorandos_por_professor}{%
+\subsubsection{Modelo produção = docentes + mestrandos\_por\_professor +
+doutorandos\_por\_professor}\label{modelo-produuxe7uxe3o-docentes-mestrandos_por_professor-doutorandos_por_professor}}
+
+\begin{quote}
+Regressão múltipla foi utilizada para analisar se docentes,
+mestrandos\_por\_professor (mestrandos/docentes) e
+doutorandos\_por\_professor (doutorandos / docentes) tem uma associação
+significativa com produção. Os resultados da regressão indicam que um
+modelo com os 3 preditores no formato: produção = -39,47 + 4,38 *
+docentes + 0,03 * mestrandos\_por\_professor + 16,10 * doutorandos
+explicam 81,62\% da variância da variável de resposta (R2 = 0,8162).As 3
+variáveis, medidas em unidade, possuem relação com o erro:
+\end{quote}
+
+\begin{itemize}
+\tightlist
+\item
+  docentes ({[}3.28; 5.49{]}, IC 95\%) 1 unidade provoca aumento em 4,38
+  em produção.
+\item
+  mestrandos ({[}-7.08; 7.15{]}, IC 95\%) 1 unidade provoca redução em
+  0,03 em produção.
+\item
+  doutorandos ({[}-1.86; 34.08{]}, IC 95\%) 1 unidade provoca aumento em
+  16.10 unidade em produção.
+\end{itemize}
+
+\hypertarget{modelo-produuxe7uxe3o-docentes-mestrandos-doutorandos}{%
+\subsubsection{Modelo produção = docentes + mestrandos +
+doutorandos}\label{modelo-produuxe7uxe3o-docentes-mestrandos-doutorandos}}
+
+\begin{quote}
+Regressão múltipla foi utilizada para analisar se docentes, mestrandos
+(valor absoluto de mestrandos desta vez) e doutorandos (valor absoluto
+de doutorandos desta vez) tem uma associação significativa com produção.
+Os resultados da regressão indicam que um modelo com os 3 preditores no
+formato: produção = -14.36 + 3.49 * docentes -0.19 * mestrandos + 1 *
+doutorandos explicam 87,10\% da variância da variável de resposta (R2 =
+0,871). As 3 variáveis medidas em unidade possuem relação com o erro:
+\end{quote}
+
+\begin{itemize}
+\tightlist
+\item
+  docentes ({[}2.58; 4.41{]}, IC 95\%) 1 unidade provoca aumento em 3,49
+  em produção.
+\item
+  mestrandos ({[}-0.35; -0.03{]}, IC 95\%) 1 unidade provoca redução em
+  0,19 em produção.
+\item
+  doutorandos ({[}0.63; 1.36{]}, IC 95\%) 1 unidade provoca aumento em 1
+  unidade em produção.
+\end{itemize}
+
+\hypertarget{conclusuxe3o}{%
+\subsubsection{Conclusão}\label{conclusuxe3o}}
+
+O modelo produção = (docentes + mestrandos + doutorandos) explica um
+pouco melhor a variação de produção que os outros dois modelos tendo
+87,06\%, enquanto o outro modelo que utiliza uma propoção de mestrandos
+e doutorandos pela quantidade de professores tem 81,62\%. O que explica
+um pouco minha primeira sugestão de que existe uma relação direta entre
+quantidade de mestrandos e doutorandos e quantidade de publicações, uma
+vez que é esperado que estes publiquem.
+
+Algo que não sei explicar é o porquê que a quantidade de mestrandos
+impactam negativamente na quantidade de produção de artigos acadêmicos.
+Seria necessário mais dados para poder entender isso. Talvez Mestrandos
+não foquem em publicação? Talvez a taxa de desistência seja alta? Talvez
+a quantidade de mestrandos sejam alta e doutorandos são mais relevantes
+para a quantidade de publicações pela obrigatoriedade em algumas
+universidades para se obter o título? Talvez como o nível de publicação
+é razoavelmente alto (A1,A2, B1), é esperado que mestrandos publiquem
+artigos em níveis inferiores enquanto doutorandos publicam artigos
+nestes níveis uma vez que a barra de publicação é mais alta?
+
+Estas seriam algumas questões que eu utilizaria para nortear e iniciar
+uma pesquisa neste tema.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{agora-produtividade}{%
+\subsection{Agora produtividade}\label{agora-produtividade}}
+
+Diferente de medirmos produção (total produzido), é medirmos
+produtividade (produzido / utilizado). Abaixo focaremos nessa análise.
+Para isso crie um modelo que investiga como um conjunto de fatores que
+você julga que são relevantes se relacionam com a produtividade dos
+programas. Crie um modelo que avalie como \emph{pelo menos 3 fatores} se
+relacionam com a produtividade de um programa. Pode reutilizar fatores
+que já definimos e analizamos para produção. Mas cuidado para não
+incluir fatores que sejam função linear de outros já incluídos (ex:
+incluir A, B e um tercero C=A+B)
+
+Produza abaixo o modelo e um texto que comente (i) o modelo, tal como os
+que fizemos antes, e (ii) as implicações - o que aprendemos sobre como
+funcionam programas de pós no brasil?.
+
+\hypertarget{explorando-os-dados}{%
+\subsubsection{Explorando os dados}\label{explorando-os-dados}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{glimpse}\NormalTok{(cacc\_tudo)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 73
+## Columns: 31
+## $ Instituição                  <chr> "UNIVERSIDADE FEDERAL DO AMAZONAS", "UNIV~
+## $ Programa                     <chr> "INFORMÁTICA (12001015012P2)", "CIÊNCIA D~
+## $ Nível                        <int> 5, 4, 3, 3, 3, 5, 4, 3, 3, 3, 5, 3, 3, 3,~
+## $ Sigla                        <chr> "UFAM", "UFPA", "UFMA", "UEMA", "FUFPI", ~
+## $ `Tem doutorado`              <chr> "Sim", "Sim", "Não", "Não", "Não", "Sim",~
+## $ `Docentes colaboradores`     <dbl> 0.25, 5.50, 3.00, 6.25, 1.75, 2.00, 1.00,~
+## $ `Docentes permanentes`       <dbl> 24.75, 14.00, 10.00, 14.00, 9.50, 20.75, ~
+## $ `Docentes visitantes`        <dbl> 0.00, 0.00, 0.00, 0.00, 0.00, 0.75, 0.50,~
+## $ `Resumos em conf`            <int> 20, 23, 15, 5, 4, 10, 6, 136, 0, 24, 27, ~
+## $ `Resumos expandidos em conf` <int> 25, 24, 7, 10, 1, 68, 9, 13, 4, 6, 16, 5,~
+## $ `Artigos em conf`            <int> 390, 284, 115, 73, 150, 269, 179, 0, 120,~
+## $ Dissertacoes                 <int> 108, 77, 50, 25, 31, 75, 60, 129, 45, 3, ~
+## $ Teses                        <int> 14, 0, 0, 0, 0, 24, 5, 0, 0, 0, 29, 0, 0,~
+## $ periodicos_A1                <int> 15, 19, 5, 1, 7, 21, 21, 0, 3, 8, 44, 0, ~
+## $ periodicos_A2                <int> 19, 21, 11, 1, 4, 32, 13, 0, 9, 2, 23, 2,~
+## $ periodicos_B1                <int> 19, 38, 7, 3, 6, 26, 16, 2, 6, 4, 32, 4, ~
+## $ periodicos_B2                <int> 1, 12, 2, 6, 0, 0, 11, 0, 0, 2, 1, 0, 0, ~
+## $ periodicos_B3                <int> 3, 16, 2, 2, 3, 16, 15, 0, 4, 6, 9, 0, 2,~
+## $ periodicos_B4                <int> 0, 4, 0, 3, 3, 0, 1, 3, 1, 6, 0, 0, 4, 5,~
+## $ periodicos_B5                <int> 10, 16, 8, 4, 12, 4, 16, 2, 6, 2, 11, 0, ~
+## $ periodicos_C                 <int> 9, 34, 12, 5, 2, 3, 11, 9, 5, 10, 16, 1, ~
+## $ periodicos_NA                <int> 7, 15, 8, 11, 12, 6, 19, 31, 7, 14, 19, 0~
+## $ per_comaluno_A1              <int> 4, 1, 0, 0, 1, 7, 5, 0, 1, 0, 10, 0, 0, 2~
+## $ per_comaluno_A2              <int> 5, 5, 5, 0, 2, 15, 3, 0, 3, 0, 3, 0, 0, 1~
+## $ per_comaluno_B1              <int> 4, 2, 5, 2, 2, 14, 6, 0, 2, 0, 17, 0, 1, ~
+## $ per_comaluno_B2              <int> 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0,~
+## $ per_comaluno_B3              <int> 2, 2, 0, 1, 0, 7, 9, 0, 2, 0, 4, 0, 0, 1,~
+## $ per_comaluno_B4              <int> 0, 0, 0, 0, 2, 0, 1, 0, 1, 3, 0, 0, 2, 0,~
+## $ per_comaluno_B5              <int> 5, 0, 4, 0, 8, 3, 6, 0, 4, 0, 4, 0, 2, 5,~
+## $ per_comaluno_C               <int> 6, 5, 3, 1, 2, 3, 7, 1, 2, 4, 8, 0, 11, 3~
+## $ per_comaluno_NA              <int> 6, 14, 2, 2, 9, 3, 6, 4, 5, 1, 10, 0, 17,~
+\end{verbatim}
+
+Adicionei Nível, pode ser que o nível aumente também a quantidade de
+produções acadêmicas.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(cacc}\SpecialCharTok{$}\NormalTok{Nível)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+##   3.000   3.000   3.000   3.836   4.000   7.000
+\end{verbatim}
+
+\hypertarget{seruxe1-que-o-nuxedvel-mestrandos-doutorandos-podem-ajudar-a-explicar-a-variuxe2ncia-de-produuxe7uxf5es}{%
+\subsubsection{Será que o nível + mestrandos + doutorandos podem ajudar
+a explicar a variância de
+produções?}\label{seruxe1-que-o-nuxedvel-mestrandos-doutorandos-podem-ajudar-a-explicar-a-variuxe2ncia-de-produuxe7uxf5es}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{modelo3 }\OtherTok{=} \FunctionTok{lm}\NormalTok{(produtividade }\SpecialCharTok{\textasciitilde{}}\NormalTok{ Nível }\SpecialCharTok{+}\NormalTok{ mestrados }\SpecialCharTok{+}\NormalTok{ doutorados, }
+             \AttributeTok{data =}\NormalTok{ cacc\_md)}
+
+\FunctionTok{tidy}\NormalTok{(modelo3, }\AttributeTok{conf.int =} \ConstantTok{TRUE}\NormalTok{, }\AttributeTok{conf.level =} \FloatTok{0.95}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 4 x 7
+##   term        estimate std.error statistic p.value conf.low conf.high
+##   <chr>          <dbl>     <dbl>     <dbl>   <dbl>    <dbl>     <dbl>
+## 1 (Intercept)  0.580     0.734       0.791 0.435   -0.918    2.08    
+## 2 Nível        0.657     0.180       3.64  0.00101  0.288    1.02    
+## 3 mestrados   -0.00662   0.00319    -2.08  0.0463  -0.0131  -0.000117
+## 4 doutorados   0.0110    0.00734     1.50  0.145   -0.00401  0.0260
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{glance}\NormalTok{(modelo3)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## # A tibble: 1 x 12
+##   r.squared adj.r.squared sigma statistic   p.value    df logLik   AIC   BIC
+##       <dbl>         <dbl> <dbl>     <dbl>     <dbl> <dbl>  <dbl> <dbl> <dbl>
+## 1     0.527         0.480 0.839      11.2 0.0000439     3  -40.2  90.3  97.9
+## # i 3 more variables: deviance <dbl>, df.residual <int>, nobs <int>
+\end{verbatim}
+
+R² = 52.72\% que é um R² ruim.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{para\_plotar\_modelo }\OtherTok{=}\NormalTok{ cacc }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{data\_grid}\NormalTok{(}\AttributeTok{producao =} \FunctionTok{seq\_range}\NormalTok{(producao, }\DecValTok{10}\NormalTok{), }\CommentTok{\# Crie um vetor de 10 valores no range}
+\NormalTok{            Nível }\OtherTok{=} \FunctionTok{seq\_range}\NormalTok{(Nível, }\DecValTok{7}\NormalTok{),  }
+            \CommentTok{\# mestrados = seq\_range(mestrados, 3),}
+            \AttributeTok{mestrados =} \FunctionTok{median}\NormalTok{(mestrados),}
+            \AttributeTok{doutorados =} \FunctionTok{seq\_range}\NormalTok{(doutorados, }\DecValTok{3}\NormalTok{)) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{add\_predictions}\NormalTok{(modelo3)}
+
+\FunctionTok{glimpse}\NormalTok{(para\_plotar\_modelo)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Rows: 210
+## Columns: 5
+## $ producao   <dbl> 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.00000, 0.000~
+## $ Nível      <dbl> 3.000000, 3.000000, 3.000000, 3.666667, 3.666667, 3.666667,~
+## $ mestrados  <int> 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58, 58,~
+## $ doutorados <dbl> 0, 76, 152, 0, 76, 152, 0, 76, 152, 0, 76, 152, 0, 76, 152,~
+## $ pred       <dbl> 2.165587, 2.999641, 3.833696, 2.603257, 3.437311, 4.271365,~
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{para\_plotar\_modelo }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{ggplot}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{x =}\NormalTok{ doutorados, }\AttributeTok{y =}\NormalTok{ pred)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_line}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{group =}\NormalTok{ Nível, }\AttributeTok{colour =}\NormalTok{ Nível)) }\SpecialCharTok{+} 
+  \FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{data =}\NormalTok{ cacc, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{y =}\NormalTok{ producao, }\AttributeTok{colour =}\NormalTok{ Nível))}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{producao-e-produtividade_files/figure-latex/unnamed-chunk-17-1.pdf}
+
+\hypertarget{modelo-produuxe7uxe3o-mestrandos-doutorandos-trabalhos-teses-dissertauxe7uxf5es}{%
+\subsubsection{Modelo produção = mestrandos + doutorandos + trabalhos
+(teses +
+dissertações)}\label{modelo-produuxe7uxe3o-mestrandos-doutorandos-trabalhos-teses-dissertauxe7uxf5es}}
+
+\begin{quote}
+Regressão múltipla foi utilizada para analisar se trabalhos(somatório de
+teses e dissertações), mestrandos (valor absoluto de mestrandos desta
+vez) e doutorandos (valor absoluto de doutorandos desta vez) tem uma
+associação significativa com produção. Os resultados da regressão
+indicam que um modelo com os 3 preditores no formato: produção = 0.58 +
+0.65 * Nível -0.0066 * mestrandos + 0.01 * doutorandos explicam 51,72\%
+da variância da variável de resposta (R2 = 0,5172). As 3 variáveis
+medidas em unidade possuem relação com o erro:
+\end{quote}
+
+\begin{itemize}
+\tightlist
+\item
+  Nível ({[}0.288; 1.024{]}, IC 95\%) 1 unidade provoca aumento em 0.65
+  em produção.
+\item
+  mestrandos ({[}-0.013; -0.0001{]}, IC 95\%) 1 unidade provoca redução
+  em 0,006 em produção.
+\item
+  doutorandos ({[}-0.004; 0.025{]}, IC 95\%) 1 unidade provoca aumento
+  em 0.01 unidade em produção.
+\end{itemize}
+
+Em suma escolher nível não foi uma boa escolha como variável preditora
+juntamente com doutorandos e mestrandos. Uma das possíveis razões para
+isso é pelo fato de nível não ser uma variável de crescimento linear e
+sim ser uma variável categórica. O que deve atrapalhar nos algoritmos
+utilizados no modelo. Só de colocar ela, as variáveis anteriores deixam
+de explicar bem também a variância.
+
+\end{document}
