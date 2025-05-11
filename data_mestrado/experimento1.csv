@@ -1,0 +1,201 @@
+Nome do Arquivo,Frase Original,Frase XTTS,Distancia XTTS,Similaridade XTTS,Quality (MOSA_NET) XTTS,Inteligibility(MOSA_NET) XTTS,Frase Your_tts,Distancia Your_tts,Similaridade Your_tts,Quality (MOSA_NET) Your_tts,Inteligibility(MOSA_NET) Your_tts
+0.wav,esse tema foi falado no congresso,esse tema foi falado no congresso,0,1.0,4.65,1,sistema foi falado no congresso,4,0.94,3.93,0.99
+1.wav,leila tem um lindo casaco,leila tem um lindo casaco,0,1.0,4.53,1,leila tem um lindo casaco,0,1.0,4.51,1.00
+2.wav,o analfabetísmo é um problema chato,o analfabetismo é um problema chaton,2,0.96,4.57,1,analfabetismo é um problema chato,3,0.94,4.40,1.00
+3.wav,o casarão foi vendido sem pressa,o casarão foi vendido sem pressa,0,1.0,4.57,1,o casarão foi vendido sem pressa,0,1.0,4.47,1.00
+4.wav,agindo com união ainda rende mais,agindo comunhão ainda rende mais,2,0.95,4.48,1,agindo com união ainda rende mais,0,1.0,4.48,1.00
+5.wav,recebi meu pai para almoçar,recebi meu pai para almoçar,0,1.0,4.64,1,esse sede meu pai para almoçar,7,0.81,3.99,0.99
+6.wav,o trabalho é a vida do povo,o trabalho é a vida do povo,0,1.0,4.62,1,o trabalho é a vida do corvo,2,0.95,4.46,1.00
+7.wav,isso se resolverá de maneira tranquila,isso se resolverá de maneira tranquila,0,1.0,4.62,1,isso se resolverá de maneira tranquila,0,1.0,4.48,1.00
+8.wav,os pesquisadores não acreditam nessa história,os pesquisadores não acreditam nessa história,0,1.0,4.60,1,os pesquisadores não acreditam nessa história,0,1.0,4.40,0.99
+9.wav,sei que amanhã atingiremos a meta proposta,sei que amanhã atingiremos a meta proposta,0,1.0,4.56,1,sei que amanhã atingiremos a meta proposta,0,1.0,4.47,1.00
+10.wav,nosso telefone está mudo,nosso telefone está mudo,0,1.0,4.29,0.99,mostre o telefone está mudo,5,0.86,4.00,0.99
+11.wav,desculpe se te chamo de velho,desculpe se te chamo de velho,0,1.0,4.53,1,desculpe se te chamo de velho,0,1.0,3.42,0.95
+12.wav,queremos discutir o orçamento,queremos discutir o orçamento,0,1.0,4.58,1,queremos discutir o orçamento,0,1.0,4.58,1.00
+13.wav,ela não tem fome quando sai de casa,ela não tem fome quando sai de casa,0,1.0,4.64,1,ela não tem fome quando sai de casa,0,1.0,4.42,1.00
+14.wav,uma índia andava na floresta,uma índia andava na floresta,0,1.0,4.62,1,uma índia andava na floresta,0,1.0,4.51,1.00
+15.wav,zeca corra bem rápido pra casa,zeca corra bem rápido para casa,1,0.98,4.53,1,seca cohab bem rápido para casa,5,0.89,4.45,1.00
+16.wav,neste caso dormirei tranquilo,neste caso dormirei tranquilo,0,1.0,4.61,1,este caso dormirei tranquilo,1,0.98,4.13,0.99
+17.wav,joão deu dinheiro pro seu pai comprar um jogo,joão deu dinheiro para o seu pai comprar um jogo,3,0.97,4.59,1,joão deu o dinheiro para o seu pai comprar um jogo,5,0.95,4.38,0.99
+18.wav,ainda faltam seis minutos,ainda faltam 6 minutos,4,0.89,4.65,1,ainda faltam 6 minutos,4,0.89,4.64,1.00
+19.wav,ela seguia discretamente,ela seguia discretamente,0,1.0,4.63,1,ela seguia discretamente,0,1.0,4.34,0.99
+20.wav,eu vi logo a índia joana e o léo,eu vim logo a índia joana e o léo,1,0.98,4.57,1,eu vi logo a índia joana e o léo,0,1.0,3.69,0.98
+21.wav,joão caminhou na praia calma,joão caminhão na praia calma,2,0.96,4.48,1,joão caminhou na praia calma,0,1.0,3.79,0.98
+22.wav,vi zé fazer essas viagens seis vezes,vi zé fazer essas viagens seis vezes,0,1.0,4.52,1,isso é fazer essas viagens 6 vezes,9,0.86,4.54,1.00
+23.wav,o atabaque do tito é coberto com pele de gato,what atabaque do tito é coberto com pele de gato,4,0.95,4.28,1,o atabaque do tito é coberto com pele de gato,0,1.0,3.79,0.98
+24.wav,ele dorme num leito de palha,ele dorme num leito de palha,0,1.0,4.61,1,e dorme num leito de palha,2,0.96,4.59,1.00
+25.wav,paira um ar de arara amarela no rio,firewatch arara amarela no rio,11,0.74,3.77,0.98,iron maiden era amarela no rio,12,0.77,3.09,0.92
+26.wav,foi muito difícil entender a canção de natal,foi muito difícil entender a canção de natal,0,1.0,4.59,1,foi muito difícil entender a canção de natal,0,1.0,4.45,1.00
+27.wav,depois do almoço te encontro pro chá,depois do almoço te encontro para o chá,3,0.96,4.57,1,depois do almoço tem encontro por chá,3,0.96,4.18,0.99
+28.wav,esses são nossos timezinhos,esses são nossos chinesinhos,4,0.87,4.56,1,esses são ossos chinesinho,6,0.83,4.37,0.99
+29.wav,procurei maria em casa,procurei maria em casa,0,1.0,4.54,1,o purpure em maria em casa,8,0.79,3.73,0.98
+30.wav,a pesca é proibida nesse canto,a pesca é proibida nesse canto,0,1.0,4.58,1,pesca é proibida nesse canto,2,0.97,4.60,1.00
+31.wav,quero te ver bem quando ele voltar de lá,quero te ver bem quando ele voltar de lá,0,1.0,4.49,1,eu te ver bem quando ele voltar de lá,4,0.94,3.81,0.98
+32.wav,tenho muito orgulho de nossa gente,tenho muito orgulho de nossa gente,0,1.0,4.54,1,tenho muito orgulho de nossa gente,0,1.0,4.52,1.00
+33.wav,o inspetor faz a vistoria completa,o inspetor faz a vistoria completa,0,1.0,4.50,1,o inspetor faz a vistoria completa,0,1.0,4.39,0.99
+34.wav,ainda não se sabe o dia da prova,ainda não se sabe o dia da prova,0,1.0,4.60,1,ainda não se sabe o dia da prova,0,1.0,4.49,1.00
+35.wav,será muito dificil conseguir que eu coma,será muito difícil conseguir que eu coma,1,0.97,4.57,1,será muito difícil conseguir que eu coma,1,0.97,4.45,1.00
+36.wav,a paixão dele é a natureza,a paixão dele é a natureza,0,1.0,4.62,1,a paixão dele é a natureza,0,1.0,4.62,1.00
+37.wav,você quer me dizer a data,você quer me dizer a data,0,1.0,4.49,1,você quer me dizer a data,0,1.0,4.60,1.00
+38.wav,desculpe mas me atrasei no casamento,desculpe mas me atrasei no casamento,0,1.0,4.60,1,desculpe mas me atrasei no casamento,0,1.0,3.89,0.98
+39.wav,faz um desvio em direção ao mar,faz um desvio em direção ao mar,0,1.0,4.41,1,faz um desvio em direção ao mar,0,1.0,4.22,0.99
+40.wav,o velho tigre ainda aceita combate,o velho tigre ainda aceita combatia,2,0.96,4.48,1,o velho tigre ainda aceita combate,0,1.0,4.41,1.00
+41.wav,é hora do homem se humanizar mais,é hora do homem se humanizar mais,0,1.0,4.49,1,é a hora do homem se humanizar mais,2,0.97,3.78,0.98
+42.wav,ela ficou na fazenda por uma hora,ela ficou na fazenda por uma hora,0,1.0,4.54,1,ela ficou na fazenda por uma hora,0,1.0,4.59,1.00
+43.wav,seu crime foi encoberto pelo capataz,seu crime foi encoberto pelo capataz,0,1.0,4.51,1,seu crime foi encoberto pelo capataz,0,1.0,4.01,0.99
+44.wav,a escuridão do quarto assustou a criança,a escuridão do quarto assustou a criança,0,1.0,4.59,1,a escuridão do quarto assustou a criança,0,1.0,3.95,0.99
+45.wav,hoje eu não pude fazer minha ginástica,hoje eu não pude fazer minha ginástica,0,1.0,4.60,1,hoje eu não pude fazer minha ginástica,0,1.0,4.54,1.00
+46.wav,comer quindim é sempre uma boa pedida,comer quindim é sempre uma boa pedida,0,1.0,4.41,0.99,comer quindim é sempre uma boa pedida,0,1.0,4.15,0.99
+47.wav,hoje irei precisar de você,hoje irei precisar de você,0,1.0,4.49,1,os irei precisar de vossa,6,0.82,3.69,0.98
+48.wav,sem ele o tempo flui num ritmo suave,sem ele o tempo flui no ritmo suave,2,0.96,4.51,1,seguir o tempo fui num ritmo suave,6,0.86,4.21,0.99
+49.wav,a sujeira lançada no rio contamina os peixes,a sujeira é lançada no rio contamina os peixes,2,0.98,4.49,1,a sujeira lançada no rio contamina os peixes,0,1.0,4.36,1.00
+50.wav,o jogo será transmitido à tarde,o jogo será transmitido à tarde,0,1.0,4.61,1,o jogo será transmitido à tarde,0,1.0,4.48,1.00
+51.wav,é possível que ele já esteja fora de perigo,é possível que ele já esteja fora de perigo,0,1.0,4.56,1,é possível que ele já esteja fora de perigo,0,1.0,3.97,0.99
+52.wav,a explicação pode ser encontrada na tese,a explicação pode ser encontrada na tese,0,1.0,4.54,1,a explicação pode ser encontrada na tese,0,1.0,4.53,1.00
+53.wav,meu vôo tinha sido marcado para as cinco horas,meu voo tinha sido marcado para as 5:00,12,0.8,4.53,1,meu voo tinha sido marcado para as 5:00,12,0.8,4.56,1.00
+54.wav,daqui a pouco a gente vai ao baile,daqui a pouco a gente vai ao baile,0,1.0,4.61,1,daqui a pouco a gente vai ao baile,0,1.0,4.55,1.00
+55.wav,estou certo que mereço a atenção dela,estou certo que mereço atenção dela,2,0.97,4.61,1,estou certo que mereço a atenção dela,0,1.0,4.38,1.00
+56.wav,era um belo enfeite todo de palha,era um belo enfeite todo de palha,0,1.0,4.57,1,era um belo enfeite todo de palha,0,1.0,4.44,1.00
+57.wav,o comércio daqui é bem tranquilo,o comércio daqui é bem tranquilo,0,1.0,4.60,1,o comércio daqui é bem tranquilo,0,1.0,4.51,1.00
+58.wav,é a minha chance de esclarecer a notícia,é minha chance de esclarecer a notícia,2,0.97,4.59,1,é a minha chance de esclarecer a notícia,0,1.0,4.22,0.99
+59.wav,a visita transformou-se numa reunião,a visita transformou-se em uma reunião,3,0.95,4.57,1,a visita transformou-se numa reunião,0,1.0,4.39,0.99
+60.wav,o cenário da história é um subúrbio da cidade,o cenário da história é um subúrbio da cidade,0,1.0,4.56,1,o cenário da história é um subúrbio da cidade,0,1.0,4.54,1.00
+61.wav,eu tenho uma ótima razão pra festejar,eu tenho uma ótima razão para festejar,1,0.99,4.61,1,eu tenho uma ótima razão para festejar,1,0.99,4.64,1.00
+62.wav,a pequena nave medirá o campo magnético,a pequena nave medirá o campo magnético,0,1.0,4.52,1,a pequena nave medirá o campo magnético,0,1.0,4.49,1.00
+63.wav,o prêmio será entregue na sessão solene,o prêmio será entregue na sessão solene,0,1.0,4.44,1,o prêmio será entregue na sessão solene,0,1.0,4.51,1.00
+64.wav,a ação se passa numa cidade calma,a ação se passa numa cidade calma,0,1.0,4.54,1,ação se passa numa cidade calma,2,0.97,4.45,1.00
+65.wav,ela e seu namorado chato saem do carro,ela e seu namorado chato saindo carro,3,0.93,4.58,1,ela e seu namorado chato sair do carro,2,0.95,4.11,0.99
+66.wav,o adiantamento surpreendeu a mim e a todos,o adiantamento surpreendeu a mim e a todos,0,1.0,4.61,1,o adiantamento surpreendeu a mim e a todos,0,1.0,4.43,1.00
+67.wav,a gente sempre colhe o que plantou,a gente sempre colhe o que plantou,0,1.0,4.59,1,a gente sempre colhe o que plantou,0,1.0,3.59,0.97
+68.wav,aqui é onde existe a flor mais interessante,aqui é onde existe a flor mais interessante,0,1.0,4.54,1,aqui é onde existe a flor mais interessante,0,1.0,4.42,1.00
+69.wav,a corrida de inverno foi uma alegria,a corrida de inverno foi uma alegria,0,1.0,4.60,1,a corrida de inverno foi uma alegria,0,1.0,4.19,0.99
+70.wav,esse empreendimento terá grande sucesso,esse empreendimento terá grande sucesso,0,1.0,4.62,1,esse empreendimento terá grande sucesso,0,1.0,4.50,1.00
+71.wav,a feira livre não funcionará amanhã,a feira livre não funcionará amanhã,0,1.0,4.62,1,a feira livre não funcionará amanhã,0,1.0,4.59,1.00
+72.wav,fumar é prejudicial à saúde e é feio,fumar é prejudicial à saúde e é feio,0,1.0,4.43,1,o mar é prejudicial à saúde e é feio,2,0.94,4.29,0.99
+73.wav,entre com seu velho código e o número da conta,entre com seu velho código e o número da conta,0,1.0,4.51,1,entre com seu velho código e o número da conta,0,1.0,3.80,0.98
+74.wav,reflita antes e discuta depois,reflita antes e discuta depois,0,1.0,4.61,1,e fita antes e discuta depois,3,0.95,4.04,0.99
+75.wav,a aula dele é bastante charmosa,aula dele é bastante charmosa,2,0.97,4.58,1,a válvula dele é bastante charmosa,4,0.92,3.78,0.98
+76.wav,usar mais aditivo pode ser desastroso,usar mais aditivo pode ser desastroso,0,1.0,4.54,1,usar mais aditivo pode ser desastroso,0,1.0,4.55,1.00
+77.wav,o clima não é mau em calcutá,o clima normal em calcutá,5,0.87,4.58,1,o clima não é mal em calcutá,1,0.96,4.27,0.99
+78.wav,a locomotiva vem com mais carga,a locomotiva vem com mais carga,0,1.0,4.64,1,a locomotiva vem com mais carga,0,1.0,4.62,1.00
+79.wav,ainda é uma boa temporada pro cinema,ainda é uma boa temporada para o cinema,3,0.96,4.61,1,ainda é uma boa temporada para o cinema,3,0.96,4.54,1.00
+80.wav,os maiores picos da terra ficam debaixo da água,os maiores picos da terra ficam debaixo da água,0,1.0,4.47,1,os maiores picos da terra ficam debaixo da água,0,1.0,4.43,1.00
+81.wav,a inauguração da vila é quarta ou quinta-feira,a inauguração da vila é quarta ou quinta-feira,0,1.0,4.5,1,a inauguração da vila é quarta ou quinta-feira,0,1.0,4.31,0.99
+82.wav,vote se você tiver o título de eleitor,vote se você tiver o título de eleitor,0,1.0,4.51,1,whatsapp se tiver o título de eleitor,11,0.8,3.75,0.98
+83.wav,hoje é fundamental encontrar a razão da existência humana,hoje é fundamental encontrar a razão da existência humana,0,1.0,4.44,1,hoje é fundamental encontrar a razão da existência humana,0,1.0,4.48,1.00
+84.wav,a temperatura é mais amena à noite,a temperatura é mais amena à noite,0,1.0,4.60,1,a temperatura é mais amena à noite,0,1.0,4.59,1.00
+85.wav,em muitas cidades a população está diminuindo,em muitas cidades a população está diminuindo,0,1.0,4.44,0.99,em muitas cidades a população está diminuindo,0,1.0,4.42,0.99
+86.wav,nunca se deve ficar em cima do morro,nunca se deve ficar em cima do morro,0,1.0,4.57,1,nunca se deve ficar em cima do muro,2,0.96,3.92,0.99
+87.wav,para as pessoas estranhas o panorama é desolador,para as pessoas estranhas o panorama é desolador,0,1.0,4.56,1,várias pessoas estranhas o panorama é desolador,4,0.93,3.67,0.98
+88.wav,é bom te ver colhendo flores menino!,é bom te ver colhendo flores menino,1,0.99,4.48,1,é bom te ver colhendo flores menino,1,0.99,4.17,0.99
+89.wav,eu finjo me banhar num lago ao amanhecer,eu finjo me banhar num lago ao amanhecer,0,1.0,4.43,1,eu fiz chamei banhar num lago ao amanhecer,6,0.9,3.89,0.98
+90.wav,é de fundamental importância encontrar uma solução comum,é de fundamental importância encontrar uma solução comum,0,1.0,4.46,1,e fundamental importância encontrar uma solução comum,3,0.97,4.28,0.99
+91.wav,a previsão é de muito nevoeiro no rio,a previsão é de muito nevoeiro no rio,0,1.0,4.60,1,a previsão é de muito nevoeiro no rio,0,1.0,3.54,0.97
+92.wav,os móveis virão as cinco da tarde,os móveis viram as 5:00 da tarde,7,0.8,4.59,1,os móveis virão às 5:00 da tarde,6,0.83,4.51,1.00
+93.wav,o barraco pode desabar em algumas horas,o barraco pode desabar em algumas horas,0,1.0,4.49,1,o barato pode desabar em algumas horas,2,0.96,4.51,1
+94.wav,o candidato falou como se já estivesse eleito,o candidato falou como se já estivesse eleito,0,1.0,4.52,1,o candidato falou como se já estivesse eleito,0,1.0,4.52,1.00
+95.wav,a ideia é falha mas interessante,a ideia é falha mas interessante,0,1.0,4.60,1,a ideia é falha mais interessante,1,0.98,4.20,0.99
+96.wav,o dia está bom pra passear de navio,o dia está bom para passear de navion,2,0.97,4.48,1,o dia está bom para passear de navio,1,0.99,3.99,0.99
+97.wav,minha correpondência me espera em casa,minha correspondência me espera em casa,1,0.99,4.33,0.99,vinha correspondência me espera em casa,2,0.96,4.42,1.00
+98.wav,a saída pra crise dele é o diálogo,a saída para crise dele é o diálogo,1,0.99,4.62,1,assaí da para a crise dele é o diálogo,5,0.92,4.58,1.00
+99.wav,finalmente são pedro chamou o mau tempo,finalmente são pedro chamou o mau tempo,0,1.0,4.45,1,finalmente são pedro chamou um mau tempo,2,0.96,4.40,1.00
+100.wav,um casal de gatos come no telhado,um casal de gatos comem no telhado,1,0.99,4.55,1,um casal de gatos comem no telhado,1,0.99,4.58,1.00
+101.wav,a cantora foi apresentar um grande sucesso,a cantora foi apresentar um grande sucesso,0,1.0,4.62,1,a cantora foi apresentar um grande sucesso,0,1.0,4.52,1
+102.wav,lá é um lugar ótimo pra tomar uns chopinhos,lá é um lugar ótimo para tomar um chopinhos,3,0.95,4.59,1,lar é um lugar ótimo para tomar um chopinhos,5,0.92,4.41,1.00
+103.wav,o musical consumiu quatro meses da vida da gente,o musical consumiu 4 meses da vida da gente,6,0.92,4.56,1,o musical consumiu quatro meses da vida da gente,0,1.0,4.49,1.00
+104.wav,o baile começa após às nove horas,o baile começa após às 9:00,10,0.77,4.56,1,o baile começa após às 9:00,10,0.77,4.33,0.99
+105.wav,apesar desse resultado tomarei uma decisão,apesar desse resultado tomarei uma decisão,0,1.0,4.53,1,apesar desse resultado tomaria uma decisão,2,0.98,4.40,0.99
+106.wav,a verdade não poupa nem as celebridades,a verdade não poupa nem as celebridades,0,1.0,4.51,1,a verdade não poupa nem as celebridades,0,1.0,4.42,1.00
+107.wav,o frio deve diminuir ainda este ano,o frio deve diminuir ainda xenon,6,0.9,4.31,0.99,o frio deve diminuir ainda esse ano,1,0.97,4.30,0.99
+108.wav,o vão da plataforma é estreito,o vão da plataforma é estreito,0,1.0,4.54,1,fogão da plataforma é feito,7,0.84,4.30,0.99
+109.wav,infelizmente não fui a ginástica,infelizmente não fui a ginástica,0,1.0,4.62,1,infelizmente não fui à ginástica,1,0.97,4.58,1
+110.wav,os meninos prenderam um filhote de tigre,os meninos prenderam um filhote de tigre,0,1.0,4.56,1,os meninos prenderam um filhote de tigre,0,1.0,4.53,1.00
+111.wav,a bolsa de valores está em alta,a bolsa de valores está em alta,0,1.0,4.53,1,a bolsa de valores está em alta,0,1.0,3.86,0.99
+112.wav,o congresso volta atrás em sua palavra,o congresso volta atrás em sua palavra,0,1.0,4.56,1,o congresso volta atrás em sua palavra,0,1.0,4.42,0.99
+113.wav,a médica receitou que eles mudassem de clima,a médica receitou que eles mudassem de clima,0,1.0,4.59,1,a médica receitou que eles mudassem de clima,0,1.0,4.37,1
+114.wav,não é permitido fumar no interior do ônibus,não é permitido fumar no interior do ônibus,0,1.0,4.59,1,não é permitido fumar no interior do ônibus,0,1.0,4.60,1
+115.wav,a garota foi presa naquela noite,a garota foi presa naquela noite,0,1.0,4.64,1,a garota foi presa naquela noite,0,1.0,4.64,1
+116.wav,o prato do dia é couve no tempero,o prato do dia é couve no tempero,0,1.0,4.58,1,o prato do dia é couve no tempero,0,1.0,4.13,0.99
+117.wav,eu viajarei a belém amanhã,eu viajarei a belém amanhã,0,1.0,4.52,1,eu viajarei a belém amanhã,0,1.0,4.08,0.99
+118.wav,a balsa é o meio de transporte daqui,a balsa é o meio de transporte daqui,0,1.0,4.51,1,a balsa é o meio de transporte daqui,0,1.0,4.15,0.99
+119.wav,a apresentação foi cancelada por causa da chuva,apresentação foi cancelada por causa da chuva,2,0.98,4.54,1,apresentação foi cancelada por causa da chuva,2,0.98,4.48,1
+120.wav,o grêmio ganhou uma quadra de esportes,o grêmio ganhou uma quadra de esportes,0,1.0,4.60,1,o grêmio ganhou uma quadra de esportes,0,1.0,4.40,1
+121.wav,hoje irei à vila sem meu filho,hoje irei à vila sem meu filho,0,1.0,4.46,1,hoje irei à vila sem meu filho,0,1.0,4.46,1
+122.wav,essa chuva não ocorre mais todo ano,essa chuva não ocorre mais todo ano,0,1.0,4.63,1,essa chuva não ocorre mais todo ano,0,1.0,4.40,0.99
+123.wav,será bom que ele estude o assunto,cera bom que ele estude o assunto,2,0.94,4.51,1,será bom que ele estude o assunto,0,1.0,3.65,0.98
+124.wav,o menu inclui um prato muito saboroso,o menu inclui um prato muito saboroso,0,1.0,4.55,1,o menu inclui um prato muito saboroso,0,1.0,4.61,1
+125.wav,podia dizer as horas por gentileza,podia dizer as horas por gentileza,0,1.0,4.57,1,podia dizer as horas por gentileza,0,1.0,4.54,1
+126.wav,a casa é enfeitada com rosas,a casa enfeitada com rosas,2,0.96,4.61,1,a casa enfeitada com rosas,2,0.96,4.51,1
+127.wav,a terra é farta mas não infinita,a terra é farta mas não é infinita,2,0.97,4.44,1,até é farta mas não infinita,5,0.9,3.87,0.98
+128.wav,o sinal emitido é captado pelos receptores,você não é metido é captado pelos receptores,9,0.84,4.53,1,o sinal emitido é captado pelos receptores,0,1.0,4.39,0.99
+129.wav,a mensalidade aumentou mais que a inflação,a mensalidade aumentou mais que a inflação,0,1.0,4.59,1,a mensalidade aumentou mais que a inflação,0,1.0,4.36,0.99
+130.wav,o tele-jornal começa às dez da noite,o telejornal começa às 10:00 da noite,6,0.88,4.53,1,outro jornal começa às 10:00 da noite,10,0.77,4.54,1
+131.wav,a cabine do telefone fica na próxima rua,a cabine do telefone fica na próxima rua,0,1.0,4.52,1,a cabine do telefone fica na próxima rua,0,1.0,4.28,0.99
+132.wav,defender a ecologia é manter a vida,defender a ecologia é manter a vida,0,1.0,4.53,1,definir a ecologia é manter a vida,3,0.93,4.44,1
+133.wav,nesse verão o calor é insuportável,nesse verão o calor é insuportável,0,1.0,4.61,1,nesse verão o calor é insuportável,0,1.0,4.55,1
+134.wav,o jardim exige muito trabalho,o jardim exige muito trabalho,0,1.0,4.63,1,o jardim exige muito trabalho,0,1.0,4.50,1
+135.wav,o pão que eu comprei era ótimo,o pão que eu comprei era ótimo,0,1.0,4.64,1,botão que eu comprei era ótimo,3,0.93,4.27,0.99
+136.wav,meu pai se entenderá com o padre chato amanhã,meu pai se entenderá com padre chato amanhã,2,0.98,4.52,1,meu pai se entenderá com o padre chato amanhã,0,1.0,4.32,0.99
+137.wav,durante o dia apague a luz,durante o dia apague a luz,0,1.0,4.63,1,durante o dia apague a luz,0,1.0,4.23,0.99
+138.wav,a sociedade uruguaia tem que se mobilizar,a sociedade uruguaia tem que se mobilizar,0,1.0,4.55,1,a sociedade uruguaia tem que se mobilizar,0,1.0,4.48,1
+139.wav,nossas atitudes são calmas,nossas atitudes são calmas,0,1.0,4.55,1,nossas atitudes são calmas,0,1.0,4.44,0.99
+140.wav,dezenas de cabos eleitorais buscavam apoio,dezenas de cabos eleitorais buscavam apoio,0,1.0,4.51,1,dezenas de cabos eleitorais buscavam apoio,0,1.0,4.44,0.99
+141.wav,nunca uma vitória foi paga com tanto suor,nunca uma vitória foi paga com tanto suor,0,1.0,4.29,0.99,nunca uma vitória foi para com tanto suor,1,0.98,4.40,1
+142.wav,nosso filho ama os animais,nosso filho ama os animais,0,1.0,4.65,1,nosso filho ama os animais,0,1.0,4.60,1
+143.wav,esse peixe é mais letal que algumas cobras,esse peixe é mais letal que algumas cobras a,2,0.98,4.54,1,esse peixe é mais letal que algumas cobras,0,1.0,4.41,0.99
+144.wav,o time continua lutando pelo sucesso,o time continua lutando pelo sucesso 1,2,0.97,4.56,1,o time continua lutando pelo sucesso,0,1.0,4.47,1
+145.wav,essa medida foi devidamente alterada,essa medida foi devidamente alterada,0,1.0,4.62,1,essa medida foi devidamente alterada,0,1.0,4.58,1
+146.wav,o estilete é uma arma perigosa,o estilete é uma arma perigosa,0,1.0,4.60,1,o shrek é uma arma perigosa,6,0.84,4.56,1
+147.wav,me aguarde quinta-feira eu venho jantar em casa,me aguarde quinta-feira eu venho jantar em casa,0,1.0,4.36,0.99,me aguarde quinta-feira eu venho jantar em casa,0,1.0,4.43,1
+148.wav,a mudança é lenta porém duradoura,a mudança é lenta porém duradoura,0,1.0,4.56,1,a mudança é a lenta porém duradoura,2,0.97,4.59,1
+149.wav,o clima não é mais seco no interior,o clima não é mais seco no interior,0,1.0,4.62,1,o clima não é mais século no interior,3,0.94,4.45,1
+150.wav,sua sensibilidade mostrará o caminho,sua sensibilidade mostrará o caminho,0,1.0,4.62,1,sua sensibilidade mostrará o caminho,0,1.0,4.56,1
+151.wav,a amazônia é a reserva ecológica do globo,amazônia é a reserva ecológica do globo,2,0.97,4.58,1,amazônia é a reserva ecológica do globo,2,0.97,4.25,0.99
+152.wav,o ministério mudou demais com a eleição,o ministério mudou demais com a eleição,0,1.0,4.57,1,o ministério mudou demais com eleição,2,0.97,4.49,1
+153.wav,novas metas surgem na informática,novas metas surgem na informática,0,1.0,4.54,1,novas metas sushi na informática,4,0.89,4.16,0.99
+154.wav,o capital de uma empresa depende de produção,o capital de uma empresa depende de produção,0,1.0,4.57,1,o capital de uma empresa depende de produção,0,1.0,4.27,0.99
+155.wav,se não fosse ela tudo teria sido melhor,se não fosse ela tudo teria sido melhor,0,1.0,4.57,1,se não fosse ela tudo teria sido melhor,0,1.0,4.48,1
+156.wav,a principal personagem no filme é uma gueixa,a principal personagem do filme é uma gueixa,1,0.98,4.53,1,a principal personagem o filme é uma gueixa,1,0.99,4.22,0.99
+157.wav,espere seu amigo em casa,espere seu amigo em casa,0,1.0,4.60,1,pede seu amigo em casa,3,0.91,3.08,0.91
+158.wav,a juventude tinha que revolucionar a escola,a juventude tinha que revolucionar a escola,0,1.0,4.52,1,a juventude tinha que revolucionar a escola,0,1.0,4.43,1
+159.wav,a cantora terá quatro meses pra ensaiar seu canto,a cantora terá 4 meses para ensaiar seu canto,7,0.91,4.58,1,a cantora terá 4 meses para ensaiar seu canto,7,0.91,4.49,1
+160.wav,prazer em conhecê-los,prazer em conhecê-los,0,1.0,4.60,1,prazer em conhecê-lo,1,0.98,3.77,0.98
+161.wav,elas traziam o equipamento,elas traziam o equipamento,0,1.0,4.65,1,elas traziam o equipamento,0,1.0,4.52,1
+162.wav,o sol ilumina o planeta,o sol ilumina o planeta,0,1.0,4.51,1,o sol ilumina o planeta,0,1.0,3.26,0.94
+163.wav,a correção do exame foi coerente,a correção do exame foi coerente,0,1.0,4.63,1,a correção do exame foi coerente,0,1.0,4.56,1
+164.wav,o vidro é antigo mas o armário não,o vidro é antigo mas o armário não,0,1.0,4.45,1,o vidro é antigo mais o armário não,1,0.99,3.97,0.99
+165.wav,o natal deve ser um dia alegre,o natal deve ser um dia alegre,0,1.0,4.62,1,o natal deve ser um dia alegre,0,1.0,4.52,1
+166.wav,trabalhei mais do que podia,trabalhei mais do que podia,0,1.0,4.64,1,trabalhei mais do que podia,0,1.0,4.46,1
+167.wav,hoje eu acordei calmo,hoje eu acordei calmo,0,1.0,4.65,1,hoje eu acordei calmo,0,1.0,4.56,1
+168.wav,esse canal parece bastante chato,esse canal parece bastante chato,0,1.0,4.66,1,esse canal parece bastante chato,0,1.0,4.65,1
+169.wav,nem parece que nós nascemos aqui,nem parece que nós nascemos aqui,0,1.0,4.61,1,nem parece que nós nascemos aqui,0,1.0,4.56,1
+170.wav,receba minha prima na festa,receba minha prima na festa,0,1.0,4.62,1,e sela a minha prima na festa,6,0.86,3.60,0.96
+171.wav,ela planejou um grande banquete cheio de gente,ela planejou um grande banquete cheio de gente,0,1.0,4.52,1,ela planejou um grande banquete cheio de gente,0,1.0,3.81,0.98
+172.wav,no lado de cá do rio há uma boa sombra,no lado de cá do rio há uma boa sombra,0,1.0,4.49,1,do lado de cá do rio a uma boa sombra,3,0.93,3.55,0.97
+173.wav,a maioria dos visitantes gosta deste momento,a maioria dos visitantes gosta deste momento,0,1.0,4.54,1,a maioria dos visitantes posta desse momento,2,0.95,4.45,1
+174.wav,minha filha é especialista em música sacra,minha filha é especialista em música sacra,0,1.0,4.53,1,minha filha é especialista em música sacra,0,1.0,4.36,1
+175.wav,a casa só tem um quarto,a casa só tem um quarto,0,1.0,4.60,1,a casa só tem um quarto,0,1.0,4.53,1
+176.wav,a duração do simpósio é de cinco dias,a duração do simpósio é de 5 dias,5,0.91,4.55,1,a duração do simpósio é de 5 dias,5,0.91,4.54,1
+177.wav,ao contrário de nossa expectativa tudo foi tranquilo,ao contrário de nossa expectativa tudo foi tranquilo,0,1.0,4.52,1,ao contrário de nossa expectativa tudo foi tranquilo,0,1.0,4.54,1
+178.wav,a intenção é ter o apoio do governante,a intenção é ter o apoio do governante,0,1.0,4.56,1,a intenção é ter o apoio do governante,0,1.0,4.57,1
+179.wav,a fila aumentou ao longo do dia,a fila aumentou ao longo do dia,0,1.0,4.57,1,a fila aumentou ao longo do dia,0,1.0,4.58,1
+180.wav,à noite a temperatura deve ir a zero,a noite a temperatura deve ir a zero,1,0.97,4.40,1,à noite a temperatura deve ir a zero,0,1.0,4.00,0.99
+181.wav,a proposta foi inspecionada pela gerência,a proposta foi inspecionada pela gerência,0,1.0,4.54,1,a proposta foi inspecionada pela gerência,0,1.0,4.56,1
+182.wav,os quadros azuis mostram o codidiano,os quadros azuis mostram o cotidiano,1,0.97,4.56,1,os quadros azuis mostram o cotidiano,1,0.97,4.05,0.99
+183.wav,já era tarde quando ele me abordou,já era tarde quando ele me abordou,0,1.0,4.56,1,já era tarde quando ele me abordou,0,1.0,4.48,1
+184.wav,o canário canta ao amanhecer,o canário canta amanhecer,3,0.94,4.60,1,o canário canta ao amanhecer,0,1.0,4.24,0.99
+185.wav,a lojinha não fica na esquina,a lojinha não fica na esquina,0,1.0,4.61,1,gauchinha não fica na esquina,5,0.86,3.62,0.98
+186.wav,meu bom time se consagrou como o melhor,meu bom time se consagrou como melhor,2,0.97,4.57,1,belmonte messi com sarou como melhor,15,0.69,3.77,0.98
+187.wav,o instituto deve servir a sua meta,o instituto deve servir a sua meta,0,1.0,4.60,1,o instituto deve servir a sua meta,0,1.0,4.14,0.99
+188.wav,ele não entende nem quando se fala pausadamente,ele não entende nem quando se fala pausadamente,0,1.0,4.51,1,ele não entende nem quando se fala pausadamente,0,1.0,4.54,1
+189.wav,seu limite do cheque azul foi aumentado,seu limite do cheque azul foi aumentado,0,1.0,4.61,1,seu limite do cheque azul foi aumentado,0,1.0,4.54,1
+190.wav,o termômetro indicava o calor,o termômetro indicava o calor,0,1.0,4.61,1,o termômetro indicava o calor,0,1.0,4.19,0.99
+191.wav,o discurso de abertura tem que ser longo,o discurso de abertura tem que ser longo,0,1.0,4.59,1,o discurso de abertura tem que ser longo,0,1.0,4.47,0.99
+192.wav,eu precisei de tempo na conferência,eu precisei de tempo na conferência,0,1.0,4.65,1,eu precisei de tempo na conferência,0,1.0,4.55,1
+193.wav,zeca marcou a temporada de jogos,zeca marcou a temporada de jogos,0,1.0,4.57,1,seca marcou a temporada de jogos,1,0.97,4.47,1
+194.wav,nada como um almoço ao ar livre,nada como um almoço ao ar livre,0,1.0,4.50,1,nada como um almoço ao ar livre,0,1.0,4.28,0.99
+195.wav,nossa filha é a primeira da classe,nossa filha é a primeira da classe,0,1.0,4.59,1,nossa filha é a primeira da classe,0,1.0,4.52,1
+196.wav,gostaria de chamar meu pai,gostaria de chamar meu pai,0,1.0,4.58,1,gostaria de chamar meu pai,0,1.0,"4.56",1
+197.wav,não tive uma prova cansativa,não tive uma prova cansativa,0,1.0,4.63,1,não tive uma prova cansativa,0,1.0,4.46,1
+198.wav,ainda tenho cinco telefonemas pra dar,ainda tenho cinco telefonemas para dar,1,0.99,4.56,1,ainda tenho cinco telefonemas para dar,1,0.99,4.61,1
+199.wav,os hotéis do sudoeste são fantásticos,os hotéis do sudoeste são fantásticos,0,1.0,4.63,1,os hotéis do sudoeste são fantásticos,0,1.0,4.58,1
